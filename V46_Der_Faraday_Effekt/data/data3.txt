@@ -1,0 +1,8 @@
+#       GaAs(undotiert)
+#       d = 5.11 mm
+#lambda     theta_1         theta_2
+#mikrometer grad    minuten grad    minuten
+1.06        318     0       343     0
+1.29        338     0       322     0
+1.45        321     0       334     0
+1.72        
