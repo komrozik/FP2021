@@ -6,4 +6,61 @@ In diesem Versuch soll die Lebensdauer kosmischer Myonen vermessen werden.
 Myonen sind Elemntarteilchen mit einer Masse von $0,106 \frac{GeV}{c^2}$ und einer Ladung von $-1 e$.
 Die Myonen entstehen aus Wechselwirkungen von kosmischen Teilchen in der Atmosphäre.
 Bei der kosmischen Strahlung unterscheidet man zwischen zwei Arten, der primären kosmischen Strahlung und der sekundären kosmischen Strahlumg.
-Die primäre kosmische Strahlung besteht hauptsächlich aus Protonen (ca 85\%) und zu 14\% aus Heliumkernen. Die restlichen 
+Die primäre kosmische Strahlung besteht hauptsächlich aus Protonen (ca 85\%) und zu 14\% aus Heliumkernen.
+Die Entstehungskanäle der kosmischen Myonen:
+\begin{equation*}
+    \feynmandiagram [horizontal=a to b] {
+        i1 [particle=\(u\)] -- [fermion] a -- [fermion] i2 [particle=\(\overline d\)],  
+        a -- [boson, edge label'=\(W^{+}\)] b,
+        f1 [particle=\(\mu^{+}\)] -- [fermion] b -- [fermion] f2 [particle=\(\nu_{\mu}\)], 
+    };
+    \hspace{4cm}
+    \feynmandiagram [horizontal=a to b] {
+        i1 [particle=\(d\)] -- [fermion] a -- [fermion] i2 [particle=\(\overline u\)],  
+        a -- [boson, edge label'=\(W^{-}\)] b,
+        f1 [particle=\(\overline \nu_{\mu}\)] -- [fermion] b -- [fermion] f2 [particle=\(\mu^{-}\)], 
+    };
+\end{equation*}
+Diese Zerfälle sicnd auch mit Kaonen ähnlich möglich aber deutlich seltener.
+
+
+\begin{equation*}
+    \feynmandiagram [layered layout, horizontal=a to b] {
+        a [particle=\(\mu^{-}\)] -- [fermion] b -- [fermion] f1 [particle=\(\nu_{\mu}\)],
+        b -- [boson, edge label'=\(W^{-}\)]c,
+        c -- [anti fermion] f2 [particle=\(\overline \nu_{e}\)],
+        c -- [fermion] f3 [particle=\(e^{-}\)],
+    };
+    \hspace{4cm}
+    \feynmandiagram [layered layout, horizontal=a to b] {
+        a [particle=\(\mu^{+}\)] -- [anti fermion] b -- [anti fermion] f1 [particle=\(\overline \nu_{\mu}\)],
+        b -- [boson, edge label'=\(W^{+}\)] c,
+        c -- [anti fermion] f2 [particle=\(e^{+}\)],
+        c -- [fermion] f3 [particle=\(\nu_{e}\)],
+    };
+\end{equation*}
+\subsection{Vorbereitung}
+\subsubsection{Was definiert die Lebensdauer und aus welchem Zusammenhang lässt sie sich herleiten?}
+\begin{align*}
+    \frac{1}{e} N_0 = N_0 e^{-\frac{\Gamma}{\hbar} t}
+\end{align*}
+\subsubsection{Berechnen sie klassich und relativistisch aus der Sicht eines auf der Erde ruhenden Beobachters die Reichweite eines kosmischen Myons.}
+\begin{align*}
+    E_{\mu} &= \SI{10}{\giga \electronvolt}\\
+    E^2 &= m^2c^2 + p^2c^2 \\
+    v &= c\sqrt{1-\frac{m^2 c^4}{E^2}}\\
+    s &= v\tau = \tau c \sqrt{1-\frac{m^2 c^4}{E^2}} = \SI{659.5}{\metre}\\
+    s\prime &= \frac{s}{\gamma} = \SI{659.5}{\metre} \sqrt{1-\frac{v^2}{c^2}} = \SI{62418}{\metre}
+\end{align*}
+\subsubsection{Welche Ereignisrate erwarten Sie auf der Erdoberfläche? Den Szintillatortank können Sie als liegenden Zylinder nähern.}
+Die Myonen werden als senkrecht auf den Szintillator treffend angenommen und die Fläche des Tanks ergibt sich damit zu $A = 2hr$.
+Auf der Erdoberfläche beträgt der Myonenfluss circa \SI{1}{\per \square \centi \metre \per \minute}.
+\begin{align*}
+    \SI{1}{\per \square \centi \metre \per \minute} &= \SI{166.7}{\per \square \metre \per \second} \\
+    \pi h r^2 &= 2\pi r^3 = \SI{0.05}{\cubic \metre} \\
+    r &≈ \SI{0.1996}{\meter} \\
+    h &= 2r \\
+    \text{Ereignisrate} &= \SI{166.7}{\per \square \metre \per \second} \cdot 4r^2 \\
+    &= \SI{1595}{\per \minute} \\
+    &= \SI{26.58}{\hertz}
+\end{align*}
