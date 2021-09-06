@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.7.19)  3 AUG 2021 13:07
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.7.19)  2 SEP 2021 16:56
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.170 seconds
+luaotfload | main : initialization completed in 0.086 seconds
 (./header.tex (/usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1881,47 +1881,63 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 34.
 \openout5 = main.toc
  [2
 
-] (./content/theorie.tex [3]) (./content/durchfuehrung.tex
-<./bilder/Schaltbild.png, id=67, 645.41125pt x 903.375pt>
+] (./content/theorie.tex
+Overfull \hbox (2.4309pt too wide) in paragraph at lines 19--35
+[]$[]$ $[]$ 
+ []
+
+
+Overfull \hbox (2.4309pt too wide) in paragraph at lines 42--60
+[]$[]$ $[]$ 
+ []
+
+[3]
+<./bilder/PMT.png, id=86, 1099.10625pt x 496.85625pt>
+File: ./bilder/PMT.png Graphic file (type png)
+<use ./bilder/PMT.png>
+Package luatex.def Info: ./bilder/PMT.png  used on input line 98.
+(luatex.def)             Requested size: 418.25555pt x 189.07268pt.
+ [4] [5<./bilder/PMT.png>] [6]) (./content/durchfuehrung.tex
+<./bilder/Schaltbild.png, id=109, 645.41125pt x 903.375pt>
 File: ./bilder/Schaltbild.png Graphic file (type png)
 <use ./bilder/Schaltbild.png>
 Package luatex.def Info: ./bilder/Schaltbild.png  used on input line 19.
 (luatex.def)             Requested size: 313.69167pt x 439.0599pt.
- [4] [5] [6<./bilder/Schaltbild.png>]) (./content/auswertung.tex
-<./plots/bins.pdf, id=89, 462.528pt x 346.896pt>
+ [7] [8<./bilder/Schaltbild.png>]) (./content/auswertung.tex
+<./plots/bins.pdf, id=125, 462.528pt x 346.896pt>
 File: ./plots/bins.pdf Graphic file (type pdf)
 <use ./plots/bins.pdf>
 Package luatex.def Info: ./plots/bins.pdf  used on input line 7.
 (luatex.def)             Requested size: 313.69167pt x 235.27744pt.
-) (./content/diskussion.tex) [7<./plots/bins.pdf>] (./content/anhang.tex [8]) [9]
+) (./content/diskussion.tex) [9<./plots/bins.pdf>] (./content/anhang.tex [10]) [11]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 3301E7958BE13D1F9662153E30D49ED1;12098.
+(rerunfilecheck)             Checksum: A4F7670F6C3108245BF0AABEF1015C13;15298.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 2595A5B476C3404E01B7224E97BEE54E;1655.
+(rerunfilecheck)             Checksum: FAA3ECFEFA7C82D997A92AEFF0BCF005;1828.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 58589 strings out of 494291
+ 58698 strings out of 494291
  100000,2373549 words of node,token memory allocated
- 715 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 28 attribute, 77 glue_spec, 16 attribute_list, 2 write, 5 pdf_action nodes
-   avail lists: 1:10,2:8870,3:1429,4:64,5:202,6:35,7:3575,8:52,9:743,10:28,11:305
- 60828 multiletter control sequences out of 65536+600000
- 304 fonts using 116040159 bytes
+ 703 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 24 attribute, 77 glue_spec, 14 attribute_list, 2 write, 5 pdf_action nodes
+   avail lists: 1:10,2:8856,3:1434,4:61,5:231,6:41,7:5398,8:54,9:650,10:28,11:431
+ 60899 multiletter control sequences out of 65536+600000
+ 326 fonts using 124724887 bytes
  79i,27n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (9 pages, 135816 bytes).
+</usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on main.pdf (11 pages, 298689 bytes).
 
-PDF statistics: 260 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 131072)
- 144 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 310 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 131072)
+ 160 words of extra memory for PDF output out of 10000 (max. 100000000)
 

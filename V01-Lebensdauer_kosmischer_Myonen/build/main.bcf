@@ -1996,8 +1996,17 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">anleitung</bcf:citekey>
-    <bcf:citekey order="2">anleitung</bcf:citekey>
+    <bcf:citekey order="1">source1</bcf:citekey>
+    <bcf:citekey order="2">source1</bcf:citekey>
+    <bcf:citekey order="3">source1</bcf:citekey>
+    <bcf:citekey order="4">source2</bcf:citekey>
+    <bcf:citekey order="5">source2</bcf:citekey>
+    <bcf:citekey order="6">source2</bcf:citekey>
+    <bcf:citekey order="7">source2</bcf:citekey>
+    <bcf:citekey order="8">Schmidt2002Aufbau</bcf:citekey>
+    <bcf:citekey order="9">Schmidt2002Aufbau</bcf:citekey>
+    <bcf:citekey order="10">anleitung</bcf:citekey>
+    <bcf:citekey order="11">anleitung</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

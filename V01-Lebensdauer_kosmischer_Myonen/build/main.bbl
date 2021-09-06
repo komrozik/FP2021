@@ -40,6 +40,33 @@
       \field{title}{Versuch 01: Lebensdauer kosmischer Myonen}
       \true{nocite}
     \endentry
+    \entry{source1}{book}{}
+      \name{author}{1}{}{%
+        {{hash=89fe8e2d221525aa953fe35351c37fcd}{%
+           family={Grupen},
+           familyi={G\bibinitperiod},
+           given={Claus},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{89fe8e2d221525aa953fe35351c37fcd}
+      \strng{fullhash}{89fe8e2d221525aa953fe35351c37fcd}
+      \strng{bibnamehash}{89fe8e2d221525aa953fe35351c37fcd}
+      \strng{authorbibnamehash}{89fe8e2d221525aa953fe35351c37fcd}
+      \strng{authornamehash}{89fe8e2d221525aa953fe35351c37fcd}
+      \strng{authorfullhash}{89fe8e2d221525aa953fe35351c37fcd}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-662-55270-4}
+      \field{month}{01}
+      \field{title}{Einstieg in die Astroteilchenphysik}
+      \field{year}{2018}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/978-3-662-55271-1
+      \endverb
+    \endentry
     \entry{matplotlib}{article}{}
       \name{author}{1}{}{%
         {{hash=a2f53dcc6bb05a06b8ad94176f80fe26}{%
@@ -77,6 +104,40 @@
       \verb http://matplotlib.org/
       \endverb
     \endentry
+    \entry{source2}{book}{}
+      \name{author}{2}{}{%
+        {{hash=cdb61438aeb4f18b81555a6e90e78f5d}{%
+           family={Kolanoski},
+           familyi={K\bibinitperiod},
+           given={Hermann},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f5ee2b81fdcc2af5637e063906fe3918}{%
+           family={Wermes},
+           familyi={W\bibinitperiod},
+           given={Norbert},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{fullhash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{bibnamehash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{authorbibnamehash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{authornamehash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{authorfullhash}{cb554d11ecf13d996cbec39a894c99df}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-662-45349-0, 978-3-662-45350-6}
+      \field{title}{{Teilchendetektoren}: {Grundlagen und Anwendungen}}
+      \field{year}{2016}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/978-3-662-45350-6
+      \endverb
+    \endentry
     \entry{numpy}{article}{}
       \name{author}{1}{}{%
         {{hash=d500f4849030f34359cdb3e1513acf83}{%
@@ -112,6 +173,35 @@
       \endverb
       \verb{url}
       \verb http://www.numpy.org/
+      \endverb
+    \endentry
+    \entry{Schmidt2002Aufbau}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=6dbf286033cb8a2e2f21af6e4e71cd6e}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Torsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Humboldt-Universität zu Berlin, Mathematisch-Naturwissenschaftliche Fakultät I}%
+      }
+      \strng{namehash}{6dbf286033cb8a2e2f21af6e4e71cd6e}
+      \strng{fullhash}{6dbf286033cb8a2e2f21af6e4e71cd6e}
+      \strng{bibnamehash}{6dbf286033cb8a2e2f21af6e4e71cd6e}
+      \strng{authorbibnamehash}{6dbf286033cb8a2e2f21af6e4e71cd6e}
+      \strng{authornamehash}{6dbf286033cb8a2e2f21af6e4e71cd6e}
+      \strng{authorfullhash}{6dbf286033cb8a2e2f21af6e4e71cd6e}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Aufbau und Funktionsnachweis eines optischen Moduls mit optisch-analoger Pulsübertragung für den AMANDA-II- und ICECUBE-Detektor}
+      \field{type}{phdthesis}
+      \field{year}{2002}
+      \true{nocite}
+      \verb{doi}
+      \verb http://dx.doi.org/10.18452/14910
       \endverb
     \endentry
   \enddatalist
