@@ -1,0 +1,117 @@
+\section{Ziel}
+Zeil ist die Durchführung von akustischen Experimenten mit einem Kugelresonator und verschiedenen Resonatorketten
+und der Vergleich mit quatnenmechanischen Systemen eines Wasserstoffatoms, Wasserstoffmoleküls und 1-dimensonalen-Festkörpern.
+
+\section{Versuchseinführung}
+Im Folgenden Versuch wird mit hilfe eines Mikrofon und eines Lautsprechers die Druckverteilung in einem Rohr- und Kugelresonator 
+betrachtet. Dazu wird ein jeweils das Frequenzsprektrum für die jeweiligen Resonatoren betrachtet, die durch ein Frequenz zu Spannung Konverter
+mittels einer geeigneten Software erstellt werden. 
+
+\section{Theorie}
+Bei den vermessenden Reonsatoren kann ein Vergleich zu quantenmechanischen Modellen gezogen werden. In diesem 
+Abschnitt sollen die Gemeinsamkeiten zwischen den im Versuch betrachteten Modellen und ihren
+quantenmechanischen Analogien aufgezeigt werden.
+
+Die Druchverteilung in einem Resonator kann mithilfe der Helmholtzgleichung
+\begin{equation}
+    \Delta \varphi=\lambda \cdot \varphi
+    \label{eq:helmholtz_all}
+\end{equation}
+beschrieben werden. Diese Differentzialgelichung beschreibt die Druckänderung mit den Randbedingungen
+\begin{equation}
+    \Delta=\sum_{k=1}^n \frac{\partial}{\partial x_k^2}
+\end{equation}
+des Resonatorrand $\delta \Omega$.
+
+
+
+
+\subsection{Der Rohrresonator}
+Der Rohrresonator wird an einem Ende mit dem Mikrofon und am anderen Ende mit dem Lautsprecher abgeschlossen.
+Beim abspielen einzelner Frequenzen entsteht genau dann eine Resonanz, wenn die Wellenlänge $\lambda$ der Schallwelle
+mit der Reflexion der Welle konstruktiv Inferferieren. Dies geschied genau dann, wenn gilt
+\begin{equation}
+    L=n\frac{\lambda}{2}n\frac{c}{2f}.
+\end{equation}
+Wobei $L$ die Rohrlänge, $c$ die Schallgeschwindikeit und $f$ die Frequenz der Schallwelle und $n$ ein ganzahliges Vielfaches ist.
+Im Rohr findet dabei nur eine waagerechte Ausbreitung der Luftmoleküle zur Ausbreitungsrichtung der Schallwelle statt.
+Die Druckverteilung $P(x,t)$ ergibt sich dann mit der Gleichung \ref{eq:helmholtz_all} zu
+\begin{equation}
+    \frac{\partial^2}{\partial t^2}P(x,t)=\frac{1}{\rho_\kappa}\frac{\partial^2}{\partial x^2}P(x,t)
+\end{equation}
+\label{sec:Theorie}
+wobei $\rho$ die Dichte und $\kappa$ die KOmpressiblität des Mediums is indem sich die Schallwellen ausbreiten (hier: Luft).
+Daraus folgt die zeitabhängige Lösung
+\begin{equation}
+    P(x,t)=p(x)\cdot \cos{(wt)}
+    \label{eq:rohr_loe}
+\end{equation}
+mit der Ortsanteil $p(x)$.
+Die Kreiszahl $k$ lässt sich über die Beziehung $k=2\pi/\lambda$ zu
+\begin{equation}
+    k=\frac{n\pi}{L}
+\end{equation}
+bestimmen.
+
+Der Vergleich mit einem Teilchen im unendlichen Potenzialtopf ist dabei ein Analogon, 
+den Materie (bzw. Elektronen und Protonen) besitzen ebenfalls Wellencharakter die durch die de-Broglie-Wellenlänge $\lambda_B$ über
+\begin{equation}
+    \lambda_B=\frac{h}{p}
+\end{equation}
+mit dem plankschen Wirkungsquantum $h$ und dem Impuls des Teilchens $p$ beschreiben werden kann.
+Die Differentzialgeleichung für die Wellenfunktion $Rho(x,t)$ für das Teilchen im Kasten folgt dabei aus der Schrödingergleichung
+\begin{equation}
+    i\hbar \frac{\partial}{\partial t}\Rho(x,t)=-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\Rho(x,t)+V(x)\Rho(x,t)
+\end{equation}
+mit der teilchenmasse $m$, dem Potenzial $V(x)$. Für den unendlichen Potenzialtopf gilt $V(0 < x < L)=0$ und
+$V(x \geq L)\rightarrow \infty$ und $V(x \leq 0)\rightarrow \infty$.
+Damit ergibt sich die Lösung
+\begin{equation}
+    \Rho(x,t)=\rho(x)\cdot \exp{(-i\omega t)}
+\end{equation}
+und die zeitunabhängige Schrödingergleichung
+\begin{equation}
+    E\rho(x)=\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\rho(x)
+\end{equation}
+mit der Energie $E$.
+Für eine stehende Welle folgt daraus die Gleichung der Form
+\begin{equation}
+    \rho(x)=A\sin{(kx+\phi)}
+    \label{eq:quant_loe}
+\end{equation}
+mit der komplexen Amplitude $A$, der Kreiszahl $k$ und der Phase $\phi$.
+An den Rändern ergibt sich dabei eine Wellenfunktion von null, sodass aus dieser Randbedingung
+$\rho(x=0)=0$ und $\rho(x=L)=0$ folgt
+\begin{equation}
+    k=\frac{n\pi}{L}.
+    \label{eq:k}
+\end{equation} 
+
+Es wird deutlich das der Vergleich der beiden Modelle berrechtigt ist. Im klassischen Fall erzeugt man eine kosinusabhängige stationäre
+Druckverteiung (vgl. Gl. \ref{eq:rohr_loe}), während das quantenmechanische Modell 
+eine stationäre Wahrscheinlichkeitsverteilung ergibt (vgl. Gl. \ref{quant_loe}). Unterschiede zeigen sich bei den Randbedingungen.
+Denn während bei dem quantenmechanischen Teilchen die Wahrscheinlichkeitsdichte verschwindet, sind an den Enden des Rohres 
+die Druchunterschiede maximal, was allerdings kein Einfluss auf die erlaubten Wellenlängen hat.
+Beide Modelle bilden dabei stehende Wellen für die Kreiszahl $k$ nach Gleichung \ref{eq:k} aus.
+
+\subsection{Der Kugelresonator}
+Nun wird ein Resonator mit einer Kugelform betrachtet (Hohlkugel), der aus zwei Halbkugel besteht, die gegen einander verdreht werden können.
+Somit können die Resonanzamplituden in Abhängigkeit des Winkels $\alpha$ gemesen werden.
+
+Zur genauen Beschreibung der dreidimensionalen Problems der Druckverteilung wird nun die Kugelsymmetrie mit den Koordinaten des Polarwinkels $\theta$ (0 bis $\pi$)
+und des Azimutwinkel $\varphi$ (0 bis $2\pi$)verwendet.
+Analog zum Rohrrensonator folgt aus der Helmholtzgleichung
+\begin{equation}
+    \frac{\partial^2 P(\vec{r}{,}t)}{\partial t^2}=\frac{1}{\rho\kappa}\Delta P(\vec{r}{,}t)
+\end{equation}
+Mit dem Ansatz $P(\vec{r}{,}t)=p(\vec{r})\cos{(\omega t)}$ ergibt sich die stationäre 
+Druckverteilung nach
+\begin{equation}
+    -\frac{w^2}{c^2}p(\vec{r})=\Delta p(\vec{r})
+\end{equation}
+die mit dem Laplace-Operator $\Delta$ in Kugelkoordinaten zu einem Winkel- $Y_l^m(\theta{,}\varphi)$ und 
+Radialanteil $f(r)$ seperiert werden kann. Dabei ist $Y_l^m(\theta{,}\varphi)$ die Kugelflächenfunktion, welche die 
+stationäre, zeitunabhängige Druckverteilung beschreibt. Dabei ist $l$ die Drehimpulsquantenzahl ($0\leq l \leq n-1$),
+
+
+
