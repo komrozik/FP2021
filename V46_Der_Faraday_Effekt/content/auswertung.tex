@@ -1,4 +1,84 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-\subsection{Bandstrukturen}
-Bandstruktur
+\subsection{Vermessung des B-Feld}
+Für die Auswertung des Versuchs muss das Magnetfeld um die Probe herum vermessen werden und die maximale Feldstärke bestimmt werden.
+Durch das auftragen der magnetischen Flussdichte gegen den Abstand der Probe wird klar ersichtlich dass sich nahe der Probe ein Peak befindet (siehe Abbildung \ref{fig:magnet}).
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale = 1]{./plots/B_Feld.pdf}
+    \caption{Das Maximum der Magnetischen Flussdichte. Die magnetische Flussdichte wird gegen den Abstand zur Position der Probe in \si{\milli \metre} aufgetragen und ein Peak ist erkennbar. An den Peak der Fluss dichte wurde eine Gaußglocke gefittet um das genaue Maximum anzunähern. Für die Näherung der Gaußglocke sind die Halbwertsbreite und das Maximum markiert.}
+    \label{fig:magnet}
+\end{figure}
+Für die Analyse wird auf die Daten eine Gauß Glocke gefittet und für die weitere Analyse wird der Messwert am nächsten zum Peak der Gaußglocke genutzt, $B_{\text{max}} = \SI{426}{\milli \tesla}$.
+
+\subsection{Bestimmung der effektiven Masse}
+Für die beiden Dotierten und die undotierte Probe wurde jeweils eine Messreihe für verschiedene Wellenlängen durchgeführt.
+Dabei wurde immer der Drehwinkel für die Faraday Rotation aufgenommen.
+Aufgrund der verschiedenen Probendicken $L$ müssen die Messwerte für jede Messung gemäß \ref{eqn:norm} normiert werden.
+\begin{equation}
+    \theta_{n} = 0.5 \cdot \frac{\theta_1 -\theta_2}{L}
+    \label{eqn:norm}
+\end{equation}
+Aus den normierten Messwerten ist, wie in Abbildung \ref{fig:drehwinkel} sichtbar, noch kein Zusammenhang zu erkennen.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale = 1]{./plots/Drehwinkel.pdf}
+    \caption{Drehwinkel}
+    \label{fig:drehwinkel}
+\end{figure}
+
+Um die effektive Masse freier Elektronen zu bestimmen werden die Eigenschaften von dotierten Proben genutzt.
+Durch die Dotierung verändert sich der Drehwinkel durch die Faraday Rotation $\Delta \theta_{frei} = \theta_{n,dotiert} - \theta_{n,rein} $.
+Wenn nun für die verschiedenen Proben dieser freie Drehwinkel $\theta_{frei}$ bestimmt wird kann dieser mit einer linearen Funktion \ref{eqn:linear} genähert werden um die Proportionalität zwischen den Drehwinkeln und dem quadrat der Wellenlänge $\lambda$ zu bestimmen.
+\begin{equation}
+    f(x) = m\cdot x
+    \label{eqn:linear}
+\end{equation}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale = 1]{./plots/Dotierung1.pdf}
+    \caption{Messdaten der freien Drehwinkel für die erste Dotierte Probe. Die Messwerte sind mit einer linearen Ausgleichsgerade angenähert. Die Linien zwischen den Messdaten dienen nur zur veranschaulichung und haben keine Bedeutung bzgl. der Messung.}
+    \label{fig:dot1}
+\end{figure}
+\begin{align*}
+    \text{Parameter für die erste Probe:}\\
+    N &= \SI{2.8e18}{\per \centi \metre \cubed}\\
+    m &= \SI{0.01706 +- 0.00145}{\radian \per \micro \metre \squared \per \milli \metre}
+\end{align*}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale = 1]{./plots/Dotierung2.pdf}
+    \caption{Messdaten der freien Drehwinkel für die zweite Dotierte Probe. Die Messwerte sind mit zwei linearen Ausgleichsgeraden angenähert. Bei der einen Ausgleichsrechnung wurden die stark abweichenden Werte an zweiter und achter Stelle entfernt. Die Linien zwischen den Messdaten dienen nur zur veranschaulichung und haben keine Bedeutung bzgl. der Messung.}
+    \label{fig:dot2}
+\end{figure}
+\begin{align*}
+    \text{Parameter für die zweite Probe:}\\
+    N &= \SI{1.4e18}{\per \centi \metre \cubed}\\
+    m_1 &= \SI{0.00653 +- 0.00121}{\radian \per \micro \metre \squared \per \milli \metre}\\
+    m_2 &= \SI{0.00799 +- 0.00114}{\radian \per \micro \metre \squared \per \milli \metre}
+\end{align*}
+Bei der Probe mit einer Dotierung von $N = \SI[per-mode=reciprocal]{1.4e18}{\per \centi \metre \cubed}$ wurden zwei Werte für die Steigung des Fits bestimmt.
+Wie in Abbildung \ref{fig:dot2} gut zu erkennen passen der zweite und achte Wert der Messung nicht gut zur Verteilung. 
+Während der Analyse wurde festgestellt, dass das entfernen der Werte für den Fit ein besseres Ergebnis liefert.
+Im folgenden wird mit dem Wert $m_2$ von dem Fit ohne Wert zwei und acht gearbeitet.
+Aus den Steigungen kann mithilfe von Gleichung \textcolor{red}{Formel} die effektive Masse berechnet werden.
+\begin{equation*}
+    m^{*} = \sqrt{\frac{e^3}{8\pi^2 \epsilon_0 c^3} \frac{N B_{max}}{n a}}
+\end{equation*}
+Wobei hier ein Brechungsindex von $n ≈ \num{3,34}$ aus \cite{Dargys} verwendet wird.
+Damit ergeben sich die effektiven Massen zu:
+\begin{align*}
+    m^{*}_1 &= \SI{67.61430 +- 2.87039e-33}{\kilo \gram}\\
+    m^{*}_1 &= \SI{70.16787 +- 5.03329e-33}{\kilo \gram}
+\end{align*}
+Als Anteile der Elektronenmasse ergibt sich damit:
+\begin{align*}
+    r_1 &= \frac{m^{*}_1}{m_e} = \num{0.07422 +- 0.00315}\\
+    r_2 &= \frac{m^{*}_2}{m_e} = \num{0.07703 +- 0.00553}
+\end{align*}
+Die Abweichungen vom Theoriewert $r ≈ 0.067$ \cite{doi:10.1063/1.324529} ergeben sich damit zu:
+\begin{align*}
+    a_1 &= \frac{r_1-r_{\text{theo}}}{r_{\text{theo}}} = \num{0.10783+-0.04703}\\
+    a_2 &= \frac{r_2-r_{\text{theo}}}{r_{\text{theo}}} = \num{0.14967+-0.08247}
+\end{align*}
