@@ -2,11 +2,11 @@ all: build/main.pdf
 
 .PRECIOUS: build/Abgabe.pdf
 # hier Python-Skripte:
-plots/plot1.pdf : programm.py | build
+plots/Dotierung2.pdf plots/Dotierung1.pdf plots/Drehwinkel.pdf plots/B_Feld.pdf : programm.py | build
 	TEXINPUTS=$$(pwd): python programm.py
 
 # hier weitere Abhängigkeiten für build/main.pdf deklarieren:
-build/main.pdf: plots/plot1.pdf
+build/main.pdf: plots/Dotierung2.pdf plots/Dotierung1.pdf plots/Drehwinkel.pdf plots/B_Feld.pdf
 
 build/main.pdf: FORCE | build
 	  TEXINPUTS=build: \
