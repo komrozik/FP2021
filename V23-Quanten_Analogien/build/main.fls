@@ -1,4 +1,4 @@
-PWD /home/smmakebe/uni/FP2021/V23-Quanten_Analogien
+PWD /home/smmakebe/uni/FP/FP2021/V23-Quanten_Analogien
 INPUT /home/smmakebe/.local/texlive/2019/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./main.tex
 OUTPUT build/main.log
@@ -342,6 +342,19 @@ INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
 INPUT /home/smmakebe/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
 INPUT /home/smmakebe/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
+INPUT ./bilder/Resonanz.jpg
+INPUT ./bilder/Resonanz.jpg
+INPUT ./bilder/Resonanz.jpg
+INPUT /home/smmakebe/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc
+INPUT /home/smmakebe/.local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /home/smmakebe/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /home/smmakebe/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./bilder/schwingungsmoden.jpg
+INPUT ./bilder/schwingungsmoden.jpg
+INPUT ./bilder/schwingungsmoden.jpg
+INPUT ./bilder/mol_orbitale.jpg
+INPUT ./bilder/mol_orbitale.jpg
+INPUT ./bilder/mol_orbitale.jpg
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/auswertung.tex

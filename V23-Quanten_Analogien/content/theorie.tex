@@ -53,6 +53,20 @@ Die Kreiszahl $k$ lässt sich über die Beziehung $k=2\pi/\lambda$ zu
 \end{equation}
 bestimmen.
 
+\begin{figure}
+    \center
+    \includegraphics[width=0.7\textwidth]{bilder/Resonanz.jpg}
+    \caption{Skizze zuer Herleitung der Resonanz im Rohrresonator. Zu sehen ist die Grundschwingung. \cite{uni}}
+\end{figure}
+
+\subsubsection{Rohrresonator mit Blenden}
+Koppelt man zwei Rohrresonatoren mit einer Blende, so verhält sich das System ähnlich zu einem 
+gekoppelten Pendel. Es kommt zur einer zusätzlichen Resonanz $\omega_{R2}$ zur Ursprungsresonanz $\omega_{R1}$.
+Es gilt zusätzlich $\omega_{R2}\geq \omega_{R1}$. Dies lässt sich nun durch eine Kette von Resonatoren und Blenden weitertreiben, wobei
+jeweils zusätzliche Resonanzen auftreten, die im Spektrum immer dichter aneinander liegen.
+Bei unendlich vielen gekoppelten Resonatoren kann man von einem Band sprechen.
+
+\subsection{Analogon Teilchen im unendlichen Potenzialtopf}
 Der Vergleich mit einem Teilchen im unendlichen Potenzialtopf ist dabei ein Analogon, 
 den Materie (bzw. Elektronen und Protonen) besitzen ebenfalls Wellencharakter die durch die de-Broglie-Wellenlänge $\lambda_B$ über
 \begin{equation}
@@ -108,10 +122,93 @@ Mit dem Ansatz $P(\vec{r}{,}t)=p(\vec{r})\cos{(\omega t)}$ ergibt sich die stati
 Druckverteilung nach
 \begin{equation}
     -\frac{w^2}{c^2}p(\vec{r})=\Delta p(\vec{r})
+    \label{eq:druckverteilung_kugel}
 \end{equation}
 die mit dem Laplace-Operator $\Delta$ in Kugelkoordinaten zu einem Winkel- $Y_l^m(\theta{,}\varphi)$ und 
 Radialanteil $f(r)$ seperiert werden kann. Dabei ist $Y_l^m(\theta{,}\varphi)$ die Kugelflächenfunktion, welche die 
 stationäre, zeitunabhängige Druckverteilung beschreibt. Dabei ist $l$ die Drehimpulsquantenzahl ($0\leq l \leq n-1$),
+der ganzzahlige Index $m$ mit $ \leq l<m \geq l$. Sodass es für jedes l nach
+\begin{equation}
+    Y^m_l(\theta{,}\varphi)=\sqrt{\frac{(2l+1)(l-m)!}{4\pi(l-m)!}}\cdot P_l^m(cos(\theta)) \cdot e^{im\varphi}
+\end{equation}
+nicht nur eine Kugelflächenfunktion sondern $2l+1$ gibt. Somit gibt es bei einem festen $l$ für eine Kugeloberfläche
+mehrere Schwingungsmöglichkeiten mit gleicher Frequenz und Energie. Man spricht von Entartung.
+
+Stellt man den Laplace-Operator aus Gleichung \ref{eq:druckverteilung_kugel} in Kugelkoordinaten da,
+so kann die entstehende Differentzialgeleichung durch den Ansatz
+\begin{equation}
+    p(r{,}\theta{,}\varphi)=Y_l^m(\theta{,}\varphi)\cdot f(r)
+\end{equation}
+in zwei Differentzialgelichung getrennt und somit gelöst werden.
+
+\begin{table}
+    \begin{tabular}{c|l l l}
+        & $m=0$ & $m=\pm 1$ & $m=\pm 2$ \\
+        \hline
+        $l=0$ & $P^0_0(\cos(\theta))=1$ & & \\
+        $l=1$ & $P^0_1(\cos(\theta))=\cos(\theta))$ & $P^{\pm 1}_1(\cos(\theta))=\mp \sin(\theta)$ & \\
+        $l=2$ & $P^0_2(\cos(\theta))=\frac{1}{3}(3\cos^2(\theta)-1)$ & $P^{\pm 1}_2(\cos(\theta))=\mp 3\cos(\theta)\sin(\theta)$ &$P^{\pm 2}_2(\cos(\theta))=3\sin^2(\theta)$ \\
+    \end{tabular}
+    \caption{Legendre-Polynome $P^m_l$ bis $l=2$}
+\end{table}
+
+\begin{figure}
+    \center
+    \includegraphics[width=0.7\textwidth]{bilder/schwingungsmoden.jpg}
+    \caption{Betrag der Schwingungsmoden $|Y_l^m(\theta{,}\varphi|$. \cite{No}}
+\end{figure}
+
+\subsubsection*{Symmetriebrechung}
+Ist die Kugelsymmetrie aufgehoben, so wird die Entartung der einzelnen m-Zustände aufgehoben, sodass die verschiedenen Kugelflächenfunktionen
+zu einem $l$ nicht mehr die gleichen Energien haben. Da es zu jedem $l$ insgesamt $2l+1$ verschiedene $m$ gibt, sollte 
+sich dies im Spektrum äußern. Allerdings wird im Spektrum lediglich eine Gruppe von $l+1$ Peaks deutlich, da sich die weiteren
+Zustände nur in der Phase unterscheiden. Bei geringer Verformung können die Kugelflächenfunktionen näherungsweise weiterhn als Lösung angenommen werden.\\
+\newline
+\subsection{Analogon Wasserstoffatom}
+Das Analogon zum Kugelresonator bildet das Wasserstoffatom mit einem einzigen Elektron, was ein anaytisches
+Lösen der Schrödingergleichung ermöglicht.
+Es folgt hierfür die dreidimensionale, zeitunabhängige Schrödingergleichung
+\begin{equation}
+    E\psi(\vec{r})=-\frac{\hbar^2}{2m}\Delta\psi(\vec{r})+V(r)\psi(r)
+\end{equation}
+mit dem Coulombpotenzial $V(r)$ des Kerns. Druckt man nun die Gleichung in Kugelkoordinaten aus
+so folgt durch einen Seperationsansatz 
+\begin{equation}
+    \psi(r{,}\theta{,}\varphi)=Y_l^m(\theta{,}\varphi)R_{n{,}l}(r)
+\end{equation}
+als Lösung für die Differentzialgeleichung. Dabei lösen die Kugelflächenfunktionen $Y_l^m$
+die rein vom Winkel abhängigen Differentzialgeleichungen und $R_{n{,}l}(r)$ den Radialteil. Dabei beschreibt
+$n$ die Hautquantenzahl. In diesem Index unterscheidet sich das Wasserstoffatom zum Kugelresonator. Das führt dazu, dass die
+die Resonanzen der beiden Systeme nicht in der gleichen Reihenfolge im Spektrum auftreten und $l$ ist dabei zu einem bestimmten
+$n$ beim Kugelresonator nicht entartet, beim Wasserstoffatom jedoch schon. Grund dafür sind die verschiedenen Potenziale.
+
+\subsection{Gekoppelte Kugelresonatoren}
+Mit zwei gekoppelten Kugelresonatoren und einer Blende kann ein Wasserstoffmolekül mit einem Elektron $\text{H}_2^+$ simuliert werden.
+Durch verschiedene Blenden aknn eine unterschiedlich starke Kopplung dargestellt werden.
+Genauso wie beim Rohrresonator mit einer Blende, bildet ich auch beim gekoppelten Kugelresonator mit Blende eine zweite Resonanz aus.
+Dies lässt sich auf das Überlappen der einzel Atomobitale zurückführen, die somit ein neues Molekülobital bilden. Die Überlappung kann auf zwei Arten geschehen.
+Dabei können die Vorzeichen jeweils gleich sein (Phasenverschiebung von $0°$) oder unterschiedlich (Phasenverschiebung um $180°$). Man spricht von
+bindender oder antibindender Überlappung.\\
+
+\begin{figure}
+    \center
+    \includegraphics[width=0.7\textwidth]{bilder/mol_orbitale.jpg}
+    \caption{Beispiel für bindende und antibindende Molekülorbitale beim Zusammenführen zweier Atome.
+    Die Farbe speigelt dabei die Phase wieder.}
+\end{figure}
+Zwei Atome mit 1s-Obitalen bilden somit bei positivem Vorzeichnen ein zugehöriges 1$\sigma$-Molekülorbital. Die neun Orbitale werden dabei mit
+griechischen Buchstaben gekennzeichnet und resultieren aus der magnetischen Quantenzahl $m$. Aus $m=0$ folgt somit die neue Orbitalbezeichnung 
+$\sigma$, $m=1$ fürt zu einen $\pi$-Orbital.
+Die Hautquantenzahl unterscheidet dabei die Orbitale gleicher Symmetreien aber unterschiedlichen Energien.
+Zusatzlich kann die Wahrscheinlichkeit der Lage des Elektrons beschrieben werden. Dabei hat das 1$\sigma$ Molekülorbital eine hohe Wahrscheinlichkeit für die Lage zwischen
+den beiden Atomkernen (bindender Zustand, energetische tiefere Lage). Bei niedrieger Auftrittswahrscheinlichkeit beim
+antibinden Zustand 1$\sigma^*$ liegt der Zustand energetisch höher als der Zustand des Atoms.
+
+
+
+
+
+
 
 
 

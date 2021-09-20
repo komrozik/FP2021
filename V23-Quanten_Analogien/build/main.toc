@@ -4,8 +4,12 @@
 \contentsline {section}{\numberline {2}Versuchseinführung}{3}{section.2}% 
 \contentsline {section}{\numberline {3}Theorie}{3}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}Der Rohrresonator}{3}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Der Kugelresonator}{5}{subsection.3.2}% 
-\contentsline {section}{\numberline {4}Durchführung}{5}{section.4}% 
-\contentsline {section}{\numberline {5}Auswertung}{5}{section.5}% 
-\contentsline {section}{\numberline {6}Diskussion}{5}{section.6}% 
-\contentsline {section}{\numberline {7}Anhang}{6}{section.7}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Rohrresonator mit Blenden}{4}{subsubsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.2}Analogon Teilchen im unendlichen Potenzialtopf}{4}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Der Kugelresonator}{5}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Analogon Wasserstoffatom}{7}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Gekoppelte Kugelresonatoren}{7}{subsection.3.5}% 
+\contentsline {section}{\numberline {4}Durchführung}{8}{section.4}% 
+\contentsline {section}{\numberline {5}Auswertung}{8}{section.5}% 
+\contentsline {section}{\numberline {6}Diskussion}{8}{section.6}% 
+\contentsline {section}{\numberline {7}Anhang}{9}{section.7}% 
