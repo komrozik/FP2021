@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {5.1}Rohrresonator}{10}{subsection.5.1}% 
 \contentsline {subsection}{\numberline {5.2}Wasserstoffatom}{12}{subsection.5.2}% 
 \contentsline {subsubsection}{\numberline {5.2.1}Die Winkelabhängigkeit der Resonanzfrequenzen}{13}{subsubsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.3}Wasserstoffmolekül}{17}{subsection.5.3}% 
-\contentsline {subsection}{\numberline {5.4}1-dim-Festkörper}{19}{subsection.5.4}% 
-\contentsline {subsubsection}{\numberline {5.4.1}Resonatorkette mit verschiedenen Blendendurchmessern}{20}{subsubsection.5.4.1}% 
-\contentsline {section}{\numberline {6}Diskussion}{24}{section.6}% 
+\contentsline {subsection}{\numberline {5.3}Wasserstoffmolekül}{18}{subsection.5.3}% 
+\contentsline {subsection}{\numberline {5.4}1-dim-Festkörper}{21}{subsection.5.4}% 
+\contentsline {subsubsection}{\numberline {5.4.1}Resonatorkette mit verschiedenen Blendendurchmessern}{22}{subsubsection.5.4.1}% 
+\contentsline {section}{\numberline {6}Diskussion}{26}{section.6}% 
