@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  21 SEP 2021 09:41
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  21 SEP 2021 17:32
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 Inserting `luaotfload.aux.set_xheight' at position 4 in `luaotfload.patch_font'.
 Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multiscript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.116 seconds
+luaotfload | main : initialization completed in 0.117 seconds
 (./header.tex (/home/smmakebe/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/smmakebe/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1667,7 +1667,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 33.
  [2
 
 ] (./content/theorie.tex [3]
-<bilder/3wege.jpg, id=47, 751.30687pt x 195.73125pt>
+<bilder/3wege.jpg, id=83, 751.30687pt x 195.73125pt>
 File: bilder/3wege.jpg Graphic file (type jpg)
 <use bilder/3wege.jpg>
 Package luatex.def Info: bilder/3wege.jpg  used on input line 30.
@@ -1684,19 +1684,120 @@ LaTeX Warning: Citation 'anleitung' on page 4 undefined on input line 31.
 LaTeX Warning: Citation 'anleitung' on page 4 undefined on input line 31.
 
 [4<./bilder/3wege.jpg>]
-<bilder/resonator.jpg, id=62, 706.13812pt x 274.02374pt>
+<bilder/resonator.jpg, id=98, 706.13812pt x 274.02374pt>
 File: bilder/resonator.jpg Graphic file (type jpg)
 <use bilder/resonator.jpg>
-Package luatex.def Info: bilder/resonator.jpg  used on input line 66.
+Package luatex.def Info: bilder/resonator.jpg  used on input line 76.
 (luatex.def)             Requested size: 334.60571pt x 129.84903pt.
 
 
-LaTeX Warning: Citation 'anleitung' on page 5 undefined on input line 67.
+LaTeX Warning: Citation 'anleitung' on page 5 undefined on input line 77.
 
 
-LaTeX Warning: Citation 'anleitung' on page 5 undefined on input line 67.
+LaTeX Warning: Citation 'anleitung' on page 5 undefined on input line 77.
 
-) (./content/durchfuehrung.tex) (./content/auswertung.tex) (./content/diskussion.tex) [5<./bilder/resonator.jpg>]
+[5<./bilder/resonator.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
+
+ []
+
+[6]
+<bilder/moden.jpg, id=119, 783.67781pt x 963.6pt>
+File: bilder/moden.jpg Graphic file (type jpg)
+<use bilder/moden.jpg>
+Package luatex.def Info: bilder/moden.jpg  used on input line 131.
+(luatex.def)             Requested size: 292.7776pt x 359.99641pt.
+) (./content/durchfuehrung.tex [7<./bilder/moden.jpg>]
+<bilder/lasermedium.jpg, id=126, 411.03563pt x 391.4625pt>
+File: bilder/lasermedium.jpg Graphic file (type jpg)
+<use bilder/lasermedium.jpg>
+Package luatex.def Info: bilder/lasermedium.jpg  used on input line 11.
+(luatex.def)             Requested size: 292.7776pt x 278.83629pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
+
+ []
+
+[8<./bilder/lasermedium.jpg>]
+<bilder/laser.jpg, id=132, 963.6pt x 331.2375pt>
+File: bilder/laser.jpg Graphic file (type jpg)
+<use bilder/laser.jpg>
+Package luatex.def Info: bilder/laser.jpg  used on input line 31.
+(luatex.def)             Requested size: 418.25555pt x 143.77377pt.
+
+
+LaTeX Warning: Citation 'anleitung' on page 9 undefined on input line 32.
+
+
+LaTeX Warning: Citation 'anleitung' on page 9 undefined on input line 32.
+
+[9<./bilder/laser.jpg>]) (./content/auswertung.tex
+<plots/stabilitätsbedingung.pdf, id=143, 462.528pt x 346.896pt>
+File: plots/stabilitätsbedingung.pdf Graphic file (type pdf)
+<use plots/stabilitätsbedingung.pdf>
+Package luatex.def Info: plots/stabilitätsbedingung.pdf  used on input line 14.
+(luatex.def)             Requested size: 418.25555pt x 313.70677pt.
+ [10]
+<plots/leistung.pdf, id=153, 462.528pt x 346.896pt>
+File: plots/leistung.pdf Graphic file (type pdf)
+<use plots/leistung.pdf>
+Package luatex.def Info: plots/leistung.pdf  used on input line 63.
+(luatex.def)             Requested size: 418.25555pt x 313.70677pt.
+ [11<./plots/stabilitätsbedingung.pdf>] [12]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 68.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 68.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 68.
+
+[13<./plots/leistung.pdf>]
+<plots/TEM00.pdf, id=251, 462.528pt x 346.896pt>
+File: plots/TEM00.pdf Graphic file (type pdf)
+<use plots/TEM00.pdf>
+Package luatex.def Info: plots/TEM00.pdf  used on input line 95.
+(luatex.def)             Requested size: 418.25555pt x 313.70677pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 139.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 139.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 139.
+
+[14<./plots/TEM00.pdf>] [15]
+<plots/TEM10.pdf, id=288, 462.528pt x 346.896pt>
+File: plots/TEM10.pdf Graphic file (type pdf)
+<use plots/TEM10.pdf>
+Package luatex.def Info: plots/TEM10.pdf  used on input line 154.
+(luatex.def)             Requested size: 418.25555pt x 313.70677pt.
+ [16<./plots/TEM10.pdf>]
+<plots/pol.pdf, id=326, 462.528pt x 346.896pt>
+File: plots/pol.pdf Graphic file (type pdf)
+<use plots/pol.pdf>
+Package luatex.def Info: plots/pol.pdf  used on input line 210.
+(luatex.def)             Requested size: 418.25555pt x 313.70677pt.
+ [17] [18<./plots/pol.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 264--267
+
+ []
+
+[19]
+Overfull \hbox (62.47101pt too wide) in paragraph at lines 295--309
+ [][] 
+ []
+
+) (./content/diskussion.tex) [20] [21]
 
 LaTeX Warning: Empty bibliography on input line 41.
 
@@ -1706,9 +1807,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: ADD667283F68EEB4733792B86DDE0BF6;5429.
+(rerunfilecheck)             Checksum: 5D02A3B1378300FF27B3ADA4ECF453AC;18384.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 48202AF3A0259637F70FB6B5A4F2AE34;654.
+(rerunfilecheck)             Checksum: 16018387FD0E0B5002A4B6ED6005E089;2256.
 
 
 LaTeX Warning: There were undefined references.
@@ -1724,19 +1825,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44626 strings out of 494291
+ 44817 strings out of 494291
  100000,1977958 words of node,token memory allocated
- 656 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 16 attribute, 79 glue_spec, 10 attribute_list, 1 write nodes
-   avail lists: 1:4,2:669,3:93,4:45,5:185,6:18,7:2851,8:43,9:295,10:14,11:351
- 47685 multiletter control sequences out of 65536+600000
- 113 fonts using 41696979 bytes
- 57i,9n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (5 pages, 69422 bytes).
+ 846 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 76 attribute, 81 glue_spec, 40 attribute_list, 1 write nodes
+   avail lists: 1:4,2:1323,3:181,4:72,5:288,6:54,7:4706,8:55,9:407,10:23,11:447
+ 47759 multiletter control sequences out of 65536+600000
+ 117 fonts using 42222903 bytes
+ 57i,10n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on main.pdf (21 pages, 300372 bytes).
 
-PDF statistics: 132 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 131072)
- 57 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 533 PDF objects out of 1000 (max. 8388607)
+ 368 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 131072)
+ 201 words of extra memory for PDF output out of 10000 (max. 100000000)
 
