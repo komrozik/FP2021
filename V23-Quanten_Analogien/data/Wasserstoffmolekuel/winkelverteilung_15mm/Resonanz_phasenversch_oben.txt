@@ -1,0 +1,7 @@
+# Amplitude 1: 16.1 V OBEN
+#Frequenz	Amplitude	Phasendifferenz	Ordnung
+#[kHz]		[V]		[°]
+2.296		19.1		-135		1
+2.303		35		-126		2
+2.418		29.7		53		3
+#Peak 4?		

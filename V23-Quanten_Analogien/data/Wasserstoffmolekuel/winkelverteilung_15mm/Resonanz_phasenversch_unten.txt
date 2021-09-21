@@ -1,0 +1,5 @@
+# Amplitude 1: 16.1 V UNTEN
+#Frequenz	Amplitude	Phasendifferenz	Ordnung
+#[kHz]		[V]		[°]
+2.301		46		30
+2.418		26.9		-128
