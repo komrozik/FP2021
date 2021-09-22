@@ -2134,8 +2134,10 @@
     <bcf:citekey order="2">anleitung</bcf:citekey>
     <bcf:citekey order="3">anleitung</bcf:citekey>
     <bcf:citekey order="4">anleitung</bcf:citekey>
-    <bcf:citekey order="5">anleitung</bcf:citekey>
-    <bcf:citekey order="6">anleitung</bcf:citekey>
+    <bcf:citekey order="5">wiki</bcf:citekey>
+    <bcf:citekey order="6">wiki</bcf:citekey>
+    <bcf:citekey order="7">anleitung</bcf:citekey>
+    <bcf:citekey order="8">anleitung</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
