@@ -3,6 +3,7 @@ In diesem Versuch soll durch die gepulste Kernspinresonanz die magnetischen Reso
 Dazu zählt die messung der Spin-Gitter-Relaxationszeit, der Spin-Spin-Relaxationszeit und der Difusionskoeffizient.
 
 \section{Theorie}
+\subsection{Kernspin}
 Protonen und Neutronen gehören zu der Gruppe der Fermionen, die über einen halbzahligen Spin $\vec{I}$ definiert sind.
 Im Verbund innerhalb eines Atoms resultieret daraus der Gesamtkernspin, der sich mittels des magnetischen
 Dipolmoments schreiben lässt als
@@ -33,6 +34,7 @@ oder energieärmer (parallele Ausrichtung). Für andere Ausrichtungen folgt aufg
 Präzession mit der (Larmor-)Frequenz 
 \begin{equation}
     \omega_L=\gamma B_0
+    \label{eq:lamor}
 \end{equation}
 
 Da sich die einzelne Atome meist schwer isolieren lassen, werden im allgemeinen Atom-Anhäufungen (Ensembles)
@@ -46,3 +48,42 @@ Nun ergibt sich daraus eine messbare makroskopische Magnetisierung $M_0$ der Pro
 \end{equation}
 wobei $N$ die Anzahl der Teilchen pro Volumeneinheit und $T$ die absolute Temperatur darstellen.
 \subsection*{Kernspinresonanz}
+Legt man nun ein zusätzliches magnetisches Wechselfeld senkrecht zu $B_0$ an, so lässt die die Richtung der Magnetsierung $\vec{M_0}$
+manipulieren. Für eine genauere Beschreibung verwende man hierbei ein rotierendes Koordinatensystem (KOS) welches mit der 
+Lamor-Frequenz $\omega_L$ aus Gleichung \ref{eq:lamor} um $\vec{B_0}$ rotiert. $M_0$ erscheint nun fortan in fester Richtung.
+Das neue in x-Richtung ausgesendete magnetische Wechselfeld bildet im KOS ein konstanten Vektor $\vec{B_1}$.
+Die Manipulation durch $B_1$ führt zu einer Präzession in y-z-Ebene. Schaltet man das Feld wieder aus, so beobachtet man ein Drehung
+der Magnetsierung um den Winkel $\theta$.\\
+Für die Anwendung sind die Einwirkzeiten zu einem 90⁰- und 180°-Puls besonders interessant.
+\subsection{Prozesse}
+Durch das Ausschalten das Feldes $B_1$ wird der Gesamtdrehimpuls nun nicht mehr beeinflusst und das ein niederiger Energiezustand
+(Parallelzustand) wird angestrebt. Das System "präzediert" in den Grundzustand zurück. Man spricht hierbei von Relaxation.
+\subsubsection{Spin-Spin-Relaxation}
+Für einen 90°-Puls (transversalen Puls) kippt nun die makroskopische Magnetisierung aus dem them. Gleichgewicht in die x-y-Ebene.
+Durch eine klassische Beschreibung mittels der Bloch-Formeln, lässt sich die Zeit bzw. die Zerfallskonstante $T_2$ bestimmen,
+die es benötigt um die entstandende Quermagnetisierung durch die Manipulation durch $B_1$ abzubauen.
+Dabei ändert sich gemäß der Drehimpulserhaltung die Gesamtenergie des Spinsystems (oder des Gitters) nicht. Lediglich die Kohärenz geht verloren, weshalb
+es sich hierbei um einen teilsweise irreversiblen Prozess handelt und somit von Entropieprozess gesprochen wird.\\
+
+Die Bloch-Formeln im KOS nehmen die Form
+\begin{align}
+    \frac{dM_x}{dt}&=-\frac{M_x}{T_2}\\
+    \frac{dM_y}{dt}&=-\frac{M_y}{T_2}
+\end{align}
+an. Durch die Integration über die Zeit lässt sich die Zerfallskonstante/transversale Relaxationszeit $T_2$ aus
+\begin{equation}
+    M(t)=M_0\exp\left(-\frac{t}{T_2}\right)
+\end{equation}
+bestimmen.
+\subsubsection{Spin-Gitter-Relaxation}
+Für einen 180°-Puls befindet sich das System im energiereichsten Zustand. Wie bereits erwähnt sind hierbei nun die antiparallelen Zustand
+häufiger besetzt als die parallelen Zustand. Auch dieses Spinsystem 'kühlt' nun fortlaufend ab, bis die angeregten Zustände gemäß der Boltzmannverteilung
+in die Grundzustands-Verteilung zurück kommen. Dabei geben die Kerne ihre Energie an das Gitter ab. 
+Diese Zeitspanne $T_1$ der longitudinalen Relaxation folgt aus der Bloch-Formel
+\begin{equation}
+    \frac{dM_z}{dt}=-\frac{M_z-M_0}{T_1}
+\end{equation} 
+und folgt über die zeitliche Interation aus
+\begin{equation}
+    M_z(t)=M_0\left(1-2\exp\left(\frac{-t}{T_1}\right)\right).
+\end{equation}
