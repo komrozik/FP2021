@@ -1,0 +1,48 @@
+\section{Ziel}
+In diesem Versuch soll durch die gepulste Kernspinresonanz die magnetischen Resonanzen an Protonen ermittelt werden.
+Dazu zählt die messung der Spin-Gitter-Relaxationszeit, der Spin-Spin-Relaxationszeit und der Difusionskoeffizient.
+
+\section{Theorie}
+Protonen und Neutronen gehören zu der Gruppe der Fermionen, die über einen halbzahligen Spin $\vec{I}$ definiert sind.
+Im Verbund innerhalb eines Atoms resultieret daraus der Gesamtkernspin, der sich mittels des magnetischen
+Dipolmoments schreiben lässt als
+\begin{equation}
+    \vec{\mu_I}=\vec{I}\cdot\gamma
+\end{equation}
+Dabei ist $\gamma$ das gyromagnetische Verhältnis und $\vec{I}$ der Gesamtdrehimpuls (oder auch Kernspin genannt) mit
+\begin{equation}
+    |\vec{I}|=\sqrt{I(I+1)}\hbar
+\end{equation}
+Befindet sich der Kern in einem exterenen MAgnetfeld $\vec{B_0}$ so kommt es aufgrund der Drehimpulserhaltung zu einer
+Wechselwirkung zwischen dem magnetischen Moment $\vec{\mu_I}$ und dem Feld.
+Daraus resultiert eine Aufspaltung der Energieniveaus.\\
+Ist das Magnetfeld bespielsweise in z-Richtung ausgebreitet bleiben die Kernspin-Komponenten
+$\vec{I_x}$ und $\vec{I_y}$ bei zeitlicher Mittlung gleich $0$. Lediglich die $I_z$-Komponente folgt
+\begin{align}
+    I_z&=\hbar m_I &\text{mit } m_I&=-I,...,I
+\end{align} 
+Für die Energieaufspaltung die zur ($2I+1$) diskreten Energieniveaus führt folgt dabei
+\begin{equation}
+    \Delta E=\gamma \hbar B_0=E_{m_I}-E_{m_{I+1}}
+\end{equation}
+\subsubsection*{Beispiel Wasserstoffkern}
+Besonders anschaulich ist dies für den Wasserstoffkern, da dieser lediglich aus einem einzelnen Proton besteht.
+Für den Kernspin gilt $I=\pm\frac{1}{2}$ aus dem zwei Energieniveaus resultieren.
+Je nach Ausrichtung der Spins gegenüber dem angelegten Magnetfeld ist der Zustand energiereicher (antiparallele Ausrichtung)
+oder energieärmer (parallele Ausrichtung). Für andere Ausrichtungen folgt aufgrund der Drehimpulserhaltung, ähnlich wie bei einem Kreisel, die
+Präzession mit der (Larmor-)Frequenz 
+\begin{equation}
+    \omega_L=\gamma B_0
+\end{equation}
+
+Da sich die einzelne Atome meist schwer isolieren lassen, werden im allgemeinen Atom-Anhäufungen (Ensembles)
+betrachtet. Die Besetzung der Energieniveaus erfolgt demnach nach der Boltzmannverteilung gemäß
+\begin{equation}
+    N_m \propto \exp\left(\frac{E_m}{k_BT}\right)
+\end{equation}
+Nun ergibt sich daraus eine messbare makroskopische Magnetisierung $M_0$ der Probe, welche die Grundlage der NMR-Spektroskopie bildet.
+\begin{equation}
+    \vec{M_0}=\frac{N\gamma I(I+1)}{3k_BT}\vec{B_0}
+\end{equation}
+wobei $N$ die Anzahl der Teilchen pro Volumeneinheit und $T$ die absolute Temperatur darstellen.
+\subsection*{Kernspinresonanz}
