@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  22 SEP 2021 13:16
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  25 SEP 2021 12:48
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 Inserting `luaotfload.aux.set_xheight' at position 4 in `luaotfload.patch_font'.
 Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multiscript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.133 seconds
+luaotfload | main : initialization completed in 0.111 seconds
 (./header.tex (/home/smmakebe/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/smmakebe/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1808,100 +1808,102 @@ File: data/Wasserstoffatom/Ohne_Ring/Spektrum_180_first.png Graphic file (type p
 Package luatex.def Info: data/Wasserstoffatom/Ohne_Ring/Spektrum_180_first.png  used on input line 41.
 (luatex.def)             Requested size: 292.7776pt x 214.90598pt.
  [12<./data/Wasserstoffatom/Ohne_Ring/Spektrum_180_first.png>]
-<example-image-a.pdf, id=158, 321.2pt x 240.9pt>
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package luatex.def Info: example-image-a.pdf  used on input line 79.
-(luatex.def)             Requested size: 188.21371pt x 141.16301pt.
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package luatex.def Info: example-image-a.pdf  used on input line 80.
-(luatex.def)             Requested size: 188.21371pt x 141.16301pt.
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package luatex.def Info: example-image-a.pdf  used on input line 82.
-(luatex.def)             Requested size: 188.21371pt x 141.16301pt.
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package luatex.def Info: example-image-a.pdf  used on input line 83.
-(luatex.def)             Requested size: 188.21371pt x 141.16301pt.
+<plots/Hatom/polar_2300.pdf, id=158, 462.528pt x 346.896pt>
+File: plots/Hatom/polar_2300.pdf Graphic file (type pdf)
+<use plots/Hatom/polar_2300.pdf>
+Package luatex.def Info: plots/Hatom/polar_2300.pdf  used on input line 79.
+(luatex.def)             Requested size: 188.21371pt x 141.15904pt.
+<plots/Hatom/polar_3960.pdf, id=159, 462.528pt x 346.896pt>
+File: plots/Hatom/polar_3960.pdf Graphic file (type pdf)
+<use plots/Hatom/polar_3960.pdf>
+Package luatex.def Info: plots/Hatom/polar_3960.pdf  used on input line 80.
+(luatex.def)             Requested size: 188.21371pt x 141.15904pt.
+<plots/Hatom/polar_4970.pdf, id=160, 462.528pt x 346.896pt>
+File: plots/Hatom/polar_4970.pdf Graphic file (type pdf)
+<use plots/Hatom/polar_4970.pdf>
+Package luatex.def Info: plots/Hatom/polar_4970.pdf  used on input line 82.
+(luatex.def)             Requested size: 188.21371pt x 141.15904pt.
+<plots/Hatom/polar_7430.pdf, id=161, 462.528pt x 346.896pt>
+File: plots/Hatom/polar_7430.pdf Graphic file (type pdf)
+<use plots/Hatom/polar_7430.pdf>
+Package luatex.def Info: plots/Hatom/polar_7430.pdf  used on input line 83.
+(luatex.def)             Requested size: 188.21371pt x 141.15904pt.
  [13]
-<plots/Hatom/zustandsaufspaltung.pdf, id=165, 462.528pt x 346.896pt>
+<plots/Hatom/zustandsaufspaltung.pdf, id=168, 462.528pt x 346.896pt>
 File: plots/Hatom/zustandsaufspaltung.pdf Graphic file (type pdf)
 <use plots/Hatom/zustandsaufspaltung.pdf>
 Package luatex.def Info: plots/Hatom/zustandsaufspaltung.pdf  used on input line 93.
 (luatex.def)             Requested size: 334.60571pt x 250.96648pt.
- [14</home/smmakebe/.local/texlive/2019/texmf-dist/tex/latex/mwe/example-image-a.pdf>]
-<plots/Hatom/faufspaltung.pdf, id=184, 462.528pt x 346.896pt>
+ [14<./plots/Hatom/polar_2300.pdf><./plots/Hatom/polar_3960.pdf><./plots/Hatom/polar_4970.pdf><./plots/Hatom/polar_7430.pdf>]
+<plots/Hatom/faufspaltung.pdf, id=256, 462.528pt x 346.896pt>
 File: plots/Hatom/faufspaltung.pdf Graphic file (type pdf)
 <use plots/Hatom/faufspaltung.pdf>
 Package luatex.def Info: plots/Hatom/faufspaltung.pdf  used on input line 104.
 (luatex.def)             Requested size: 334.60571pt x 250.96648pt.
- [15<./plots/Hatom/zustandsaufspaltung.pdf>]
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package luatex.def Info: example-image-a.pdf  used on input line 114.
-(luatex.def)             Requested size: 209.12778pt x 156.85147pt.
-<plots/Hatom/zustandsaufspaltung_9.pdf, id=237, 462.528pt x 346.896pt>
+ [15<./plots/Hatom/zustandsaufspaltung.pdf>] [16<./plots/Hatom/faufspaltung.pdf>]
+<plots/Hatom/zustandsaufspaltung_9.pdf, id=361, 462.528pt x 346.896pt>
 File: plots/Hatom/zustandsaufspaltung_9.pdf Graphic file (type pdf)
 <use plots/Hatom/zustandsaufspaltung_9.pdf>
 Package luatex.def Info: plots/Hatom/zustandsaufspaltung_9.pdf  used on input line 123.
 (luatex.def)             Requested size: 292.7776pt x 219.59367pt.
- [16<./plots/Hatom/faufspaltung.pdf>] [17<./plots/Hatom/zustandsaufspaltung_9.pdf>]
+ [17<./plots/Hatom/zustandsaufspaltung_9.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
-<plots/Hatom/res_blende.pdf, id=345, 462.528pt x 346.896pt>
+<plots/Hatom/res_blende.pdf, id=416, 462.528pt x 346.896pt>
 File: plots/Hatom/res_blende.pdf Graphic file (type pdf)
 <use plots/Hatom/res_blende.pdf>
 Package luatex.def Info: plots/Hatom/res_blende.pdf  used on input line 138.
 (luatex.def)             Requested size: 292.7776pt x 219.59367pt.
-<plots/Hatom/zustandsaufspaltung_mol15.pdf, id=347, 462.528pt x 346.896pt>
+<plots/Hatom/zustandsaufspaltung_mol15.pdf, id=418, 462.528pt x 346.896pt>
 File: plots/Hatom/zustandsaufspaltung_mol15.pdf Graphic file (type pdf)
 <use plots/Hatom/zustandsaufspaltung_mol15.pdf>
 Package luatex.def Info: plots/Hatom/zustandsaufspaltung_mol15.pdf  used on input line 148.
 (luatex.def)             Requested size: 292.7776pt x 219.59367pt.
 [18<./plots/Hatom/res_blende.pdf>]
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package luatex.def Info: example-image-a.pdf  used on input line 158.
-(luatex.def)             Requested size: 188.21371pt x 141.16301pt.
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package luatex.def Info: example-image-a.pdf  used on input line 159.
-(luatex.def)             Requested size: 188.21371pt x 141.16301pt.
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package luatex.def Info: example-image-a.pdf  used on input line 161.
-(luatex.def)             Requested size: 188.21371pt x 141.16301pt.
+<plots/Hatom/polar_mol_2297.pdf, id=469, 462.528pt x 346.896pt>
+File: plots/Hatom/polar_mol_2297.pdf Graphic file (type pdf)
+<use plots/Hatom/polar_mol_2297.pdf>
+Package luatex.def Info: plots/Hatom/polar_mol_2297.pdf  used on input line 158.
+(luatex.def)             Requested size: 188.21371pt x 141.15904pt.
+<plots/Hatom/polar_mol_2304.pdf, id=470, 462.528pt x 346.896pt>
+File: plots/Hatom/polar_mol_2304.pdf Graphic file (type pdf)
+<use plots/Hatom/polar_mol_2304.pdf>
+Package luatex.def Info: plots/Hatom/polar_mol_2304.pdf  used on input line 159.
+(luatex.def)             Requested size: 188.21371pt x 141.15904pt.
+<plots/Hatom/polar_mol_2416.pdf, id=471, 462.528pt x 346.896pt>
+File: plots/Hatom/polar_mol_2416.pdf Graphic file (type pdf)
+<use plots/Hatom/polar_mol_2416.pdf>
+Package luatex.def Info: plots/Hatom/polar_mol_2416.pdf  used on input line 161.
+(luatex.def)             Requested size: 188.21371pt x 141.15904pt.
  [19<./plots/Hatom/zustandsaufspaltung_mol15.pdf>]
 Overfull \hbox (18.58258pt too wide) in paragraph at lines 169--179
  [] 
  []
 
-[20]
-<data/Festkoerper/16mm/Spektrum_2.png, id=454, 849.1725pt x 623.32875pt>
+[20<./plots/Hatom/polar_mol_2297.pdf><./plots/Hatom/polar_mol_2304.pdf><./plots/Hatom/polar_mol_2416.pdf>]
+<data/Festkoerper/16mm/Spektrum_2.png, id=586, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/16mm/Spektrum_2.png Graphic file (type png)
 <use data/Festkoerper/16mm/Spektrum_2.png>
 Package luatex.def Info: data/Festkoerper/16mm/Spektrum_2.png  used on input line 191.
 (luatex.def)             Requested size: 188.21371pt x 138.15044pt.
-<data/Festkoerper/16mm/Spektrum_4.png, id=455, 849.1725pt x 623.32875pt>
+<data/Festkoerper/16mm/Spektrum_4.png, id=587, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/16mm/Spektrum_4.png Graphic file (type png)
 <use data/Festkoerper/16mm/Spektrum_4.png>
 Package luatex.def Info: data/Festkoerper/16mm/Spektrum_4.png  used on input line 192.
 (luatex.def)             Requested size: 188.21371pt x 138.15044pt.
-<data/Festkoerper/16mm/Spektrum_10.png, id=456, 849.1725pt x 623.32875pt>
+<data/Festkoerper/16mm/Spektrum_10.png, id=588, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/16mm/Spektrum_10.png Graphic file (type png)
 <use data/Festkoerper/16mm/Spektrum_10.png>
 Package luatex.def Info: data/Festkoerper/16mm/Spektrum_10.png  used on input line 194.
 (luatex.def)             Requested size: 188.21371pt x 138.15044pt.
-<data/Festkoerper/10mm/Spektrum_2.png, id=458, 849.1725pt x 623.32875pt>
+<data/Festkoerper/10mm/Spektrum_2.png, id=590, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/10mm/Spektrum_2.png Graphic file (type png)
 <use data/Festkoerper/10mm/Spektrum_2.png>
 Package luatex.def Info: data/Festkoerper/10mm/Spektrum_2.png  used on input line 207.
 (luatex.def)             Requested size: 188.21371pt x 138.15044pt.
-<data/Festkoerper/13mm/Spektrum_2.png, id=459, 849.1725pt x 623.32875pt>
+<data/Festkoerper/13mm/Spektrum_2.png, id=591, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/13mm/Spektrum_2.png Graphic file (type png)
 <use data/Festkoerper/13mm/Spektrum_2.png>
 Package luatex.def Info: data/Festkoerper/13mm/Spektrum_2.png  used on input line 208.
@@ -1912,60 +1914,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--211
  []
 
 [21<./data/Festkoerper/16mm/Spektrum_2.png><./data/Festkoerper/16mm/Spektrum_4.png><./data/Festkoerper/16mm/Spektrum_10.png>]
-<data/Festkoerper/10mm/Spektrum_4.png, id=471, 849.1725pt x 623.32875pt>
+<data/Festkoerper/10mm/Spektrum_4.png, id=603, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/10mm/Spektrum_4.png Graphic file (type png)
 <use data/Festkoerper/10mm/Spektrum_4.png>
 Package luatex.def Info: data/Festkoerper/10mm/Spektrum_4.png  used on input line 215.
 (luatex.def)             Requested size: 188.21371pt x 138.15044pt.
-<data/Festkoerper/13mm/Spektrum_4.png, id=472, 849.1725pt x 623.32875pt>
+<data/Festkoerper/13mm/Spektrum_4.png, id=604, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/13mm/Spektrum_4.png Graphic file (type png)
 <use data/Festkoerper/13mm/Spektrum_4.png>
 Package luatex.def Info: data/Festkoerper/13mm/Spektrum_4.png  used on input line 216.
 (luatex.def)             Requested size: 188.21371pt x 138.15044pt.
-<data/Festkoerper/10mm/Spektrum_10.png, id=473, 849.1725pt x 623.32875pt>
+<data/Festkoerper/10mm/Spektrum_10.png, id=605, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/10mm/Spektrum_10.png Graphic file (type png)
 <use data/Festkoerper/10mm/Spektrum_10.png>
 Package luatex.def Info: data/Festkoerper/10mm/Spektrum_10.png  used on input line 223.
 (luatex.def)             Requested size: 188.21371pt x 138.15044pt.
-<data/Festkoerper/13mm/Spektrum_10.png, id=474, 849.1725pt x 623.32875pt>
+<data/Festkoerper/13mm/Spektrum_10.png, id=606, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/13mm/Spektrum_10.png Graphic file (type png)
 <use data/Festkoerper/13mm/Spektrum_10.png>
 Package luatex.def Info: data/Festkoerper/13mm/Spektrum_10.png  used on input line 224.
 (luatex.def)             Requested size: 188.21371pt x 138.15044pt.
  [22<./data/Festkoerper/10mm/Spektrum_2.png><./data/Festkoerper/13mm/Spektrum_2.png><./data/Festkoerper/10mm/Spektrum_4.png><./data/Festkoerper/13mm/Spektrum_4.png>]
-<data/Festkoerper/10mm/Spektrum_dotiert_37_5.png, id=486, 849.1725pt x 623.32875pt>
+<data/Festkoerper/10mm/Spektrum_dotiert_37_5.png, id=619, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/10mm/Spektrum_dotiert_37_5.png Graphic file (type png)
 <use data/Festkoerper/10mm/Spektrum_dotiert_37_5.png>
 Package luatex.def Info: data/Festkoerper/10mm/Spektrum_dotiert_37_5.png  used on input line 239.
 (luatex.def)             Requested size: 188.21371pt x 138.15044pt.
-<data/Festkoerper/10mm/Spektrum_dotiert_62_5.png, id=487, 849.1725pt x 623.32875pt>
+<data/Festkoerper/10mm/Spektrum_dotiert_62_5.png, id=620, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/10mm/Spektrum_dotiert_62_5.png Graphic file (type png)
 <use data/Festkoerper/10mm/Spektrum_dotiert_62_5.png>
 Package luatex.def Info: data/Festkoerper/10mm/Spektrum_dotiert_62_5.png  used on input line 240.
 (luatex.def)             Requested size: 188.21371pt x 138.15044pt.
-<data/Festkoerper/10mm/Spektrum_dotiert_75.png, id=488, 849.1725pt x 623.32875pt>
+<data/Festkoerper/10mm/Spektrum_dotiert_75.png, id=621, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/10mm/Spektrum_dotiert_75.png Graphic file (type png)
 <use data/Festkoerper/10mm/Spektrum_dotiert_75.png>
 Package luatex.def Info: data/Festkoerper/10mm/Spektrum_dotiert_75.png  used on input line 241.
 (luatex.def)             Requested size: 188.21371pt x 138.15044pt.
  [23<./data/Festkoerper/10mm/Spektrum_10.png><./data/Festkoerper/13mm/Spektrum_10.png>]
-<data/Festkoerper/periodisch/Spektrum_75_einzeln.png, id=498, 849.1725pt x 623.32875pt>
+<data/Festkoerper/periodisch/Spektrum_75_einzeln.png, id=631, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/periodisch/Spektrum_75_einzeln.png Graphic file (type png)
 <use data/Festkoerper/periodisch/Spektrum_75_einzeln.png>
 Package luatex.def Info: data/Festkoerper/periodisch/Spektrum_75_einzeln.png  used on input line 254.
 (luatex.def)             Requested size: 209.12778pt x 153.51106pt.
-<data/Festkoerper/periodisch/Spektrum_50_einzeln.png, id=499, 849.1725pt x 623.32875pt>
+<data/Festkoerper/periodisch/Spektrum_50_einzeln.png, id=632, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/periodisch/Spektrum_50_einzeln.png Graphic file (type png)
 <use data/Festkoerper/periodisch/Spektrum_50_einzeln.png>
 Package luatex.def Info: data/Festkoerper/periodisch/Spektrum_50_einzeln.png  used on input line 255.
 (luatex.def)             Requested size: 209.12778pt x 153.51106pt.
-<data/Festkoerper/periodisch/Spektrum_10_16mm_50_75.png, id=500, 849.1725pt x 623.32875pt>
+<data/Festkoerper/periodisch/Spektrum_10_16mm_50_75.png, id=633, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/periodisch/Spektrum_10_16mm_50_75.png Graphic file (type png)
 <use data/Festkoerper/periodisch/Spektrum_10_16mm_50_75.png>
 Package luatex.def Info: data/Festkoerper/periodisch/Spektrum_10_16mm_50_75.png  used on input line 256.
 (luatex.def)             Requested size: 334.60571pt x 245.6177pt.
  [24<./data/Festkoerper/10mm/Spektrum_dotiert_37_5.png><./data/Festkoerper/10mm/Spektrum_dotiert_62_5.png><./data/Festkoerper/10mm/Spektrum_dotiert_75.png>]
-<data/Festkoerper/periodisch/Spektrum_8_13mm_16mm_50.png, id=513, 849.1725pt x 623.32875pt>
+<data/Festkoerper/periodisch/Spektrum_8_13mm_16mm_50.png, id=646, 849.1725pt x 623.32875pt>
 File: data/Festkoerper/periodisch/Spektrum_8_13mm_16mm_50.png Graphic file (type png)
 <use data/Festkoerper/periodisch/Spektrum_8_13mm_16mm_50.png>
 Package luatex.def Info: data/Festkoerper/periodisch/Spektrum_8_13mm_16mm_50.png  used on input line 269.
@@ -1980,7 +1982,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: C5A2AF619D2161570E792CB5DBDCC3BC;18037.
+(rerunfilecheck)             Checksum: 4F354A4CB60C42CAF30DE81393B46065;17733.
 Package rerunfilecheck Info: File `main.toc' has not changed.
 (rerunfilecheck)             Checksum: 33CE39322ED87BCC6C1CB0E6947CD0E2;1693.
 
@@ -2001,19 +2003,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45155 strings out of 494291
+ 45187 strings out of 494291
  100000,1977958 words of node,token memory allocated
  875 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 1 glyph, 84 attribute, 81 glue_spec, 44 attribute_list, 1 write nodes
    avail lists: 1:3,2:840,3:147,4:58,5:274,6:40,7:4004,8:73,9:239,10:17,11:479
- 47903 multiletter control sequences out of 65536+600000
- 139 fonts using 50911451 bytes
+ 47926 multiletter control sequences out of 65536+600000
+ 139 fonts using 50911663 bytes
  57i,11n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (27 pages, 442816 bytes).
+Output written on main.pdf (27 pages, 511903 bytes).
 
-PDF statistics: 652 PDF objects out of 1000 (max. 8388607)
- 378 compressed objects within 4 object streams
- 100 named destinations out of 1000 (max. 131072)
+PDF statistics: 785 PDF objects out of 1000 (max. 8388607)
+ 432 compressed objects within 5 object streams
+ 99 named destinations out of 1000 (max. 131072)
  145 words of extra memory for PDF output out of 10000 (max. 100000000)
 
