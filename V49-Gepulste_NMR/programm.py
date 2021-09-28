@@ -114,7 +114,7 @@ plt.savefig('plots/df54.pdf',bbox_inches = "tight")
 plt.close()
 
 def A(tau,a,b):
-    return a*(1+2*np.exp(-(tau/b)))
+    return a*np.exp(-(tau/b))
 
 plt.figure(figsize=(6.4,3.96),dpi=300)
 plt.plot(df52['X']
