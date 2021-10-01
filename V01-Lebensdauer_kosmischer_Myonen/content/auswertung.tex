@@ -17,7 +17,7 @@ Die Wahrscheinlichkeit $k$ weitere  Myonen in der Suchzeit $T_{\text{Such}}$ zu 
 \end{equation*}
 Damit ergibt sich die Wahrscheinlichkeit ein zusätzliches Myon zu messen zu: 
 \begin{equation*}
-    P_{T_{\text{Such}}\cdot \nu}(1) = (T_{\text{Such}}\cdot \nu)e^{-(T_{\text{Such}}\cdot \nu)} ≈ \SI{0.03346 \pm 0.00002}{\percent}
+    P_{T_{\text{Such}}\cdot \nu}(1) = (T_{\text{Such}}\cdot \nu)e^{-(T_{\text{Such}}\cdot \nu)} ≈ \SI{0.033460 \pm 0.000016}{\percent}
 \end{equation*}
 Daraus lässt sich die Menge der nicht detektierten Ereignisse berechnen:
 \begin{equation*}
@@ -25,7 +25,7 @@ Daraus lässt sich die Menge der nicht detektierten Ereignisse berechnen:
 \end{equation*}
 Mit der Anzahl an Kanälen ergibt sich ein Untergrund pro Kanal zu:
 \begin{equation*}
-    U = \frac{N_{\text{Fehler}}}{N_{\text{Kanal}}} = \num{3.1054 +- 0.0030}\; \frac{\text{Counts}}{\text{Kanal}}
+    U = \frac{N_{\text{Fehler}}}{N_{\text{Kanal}}} = \num{3.105 +- 0.003}\; \frac{\text{Counts}}{\text{Kanal}}
 \end{equation*}
 
 \subsection{Justierung der PMT Verzögerung}
@@ -38,16 +38,17 @@ Mit der Anzahl an Kanälen ergibt sich ein Untergrund pro Kanal zu:
     \label{fig:rate_20Hz}
 \end{figure}
 Aus den Messwerten ist eine Funktion mit einem Peak erkennbar (dargestellt in \ref{fig:rate_20Hz}).
-Aufgrund der Form der Funktion wird sich dazu entschieden eine Gauß-Funktion auf die Daten zu fitten um den optimalen Wert für die nachfolgende Analyse zu bestimmen.
+Aufgrund der Form der Funktion wird sich dazu entschieden eine Gauß-Funktion an die Daten zu nähern um den optimalen Wert für die nachfolgende Analyse zu bestimmen.
 Mit dem Fit der Gauß-Funktion ergibt sich eine Verzögerung von \num{1} zwischen den Signalen.
 \begin{align*}
     \text{Gauß-Funktion:}\\
     g(x) &= a \cdot \text{exp} \left(-\frac{(x-x_0)^2}{2\sigma^2}\right)\\
     \text{Parameter:}\\
-    a &= \num{175.7923 +- 5.0867}\\
-    x_0 &= \SI{1.0418 +- 0.3141}{\nano\second}\\
-    \sigma &= \SI{5.4548 +- 0.2920}{\nano\second}\\
+    a &= \num{175 +- 5}\\
+    x_0 &= \SI{1.0 +- 0.3}{\nano\second}\\
+    \sigma &= \SI{5.45 +- 0.29}{\nano\second}\\
 \end{align*}
+Die Gaußfunktion besitzt eine Halbwertsbreite von \SI{12,85}{\nano \second}, welche nur leicht von der erwarteten Plateubreite von \SI{10}{\nano \second} durch die Breite des Diskriminator Signals abweicht.
 Im Nachfolgenden wurde entgegen der Näherung der Gauß-Funktion der Wert mit der maximalen Rate gewählt.
 Somit ist für den Versuch die Verzögerung von \num{0.5} eingestellt.
 \subsection{Justierung der MCA Bin-Zuordnung}
@@ -83,19 +84,19 @@ Die Messdaten zeigen einen exponentiellen Verlauf in den Zeitintervallen zwische
 Aufgrund des exponentiellen abfallens wird eine e-Funktion an die Daten genähert.
 \begin{align*}
     \text{Exponential-Funktion:}\\
-    h(x) &= A \cdot \text{exp} \left(-\lambda t\right) + U\\
+    h(t) &= A \cdot \text{exp} \left(-\lambda t\right) + U\\
     \text{Parameter:}\\
-    A &= \num{115.2149 +- 2.7913}\\
-    \lambda &= \SI[per-mode=reciprocal]{0.58644 +- 0.01968}{\per\micro\second}\\
-    U &= U_{\text{theo}} = \num{3.1054 +- 0.0030}\; \frac{\text{Counts}}{\text{Kanal}} \\
+    A &= \num{115.2 +- 2.7}\\
+    \lambda &= \SI[per-mode=reciprocal]{0.586 +- 0.019}{\per\micro\second}\\
+    U &= U_{\text{theo}} = \num{3.105 +- 0.003}\; \frac{\text{Counts}}{\text{Kanal}} \\
 \end{align*}
-Mit dem theoretisch berechneten Untergrund $U_{\text{theo}}$
+Dabei wurde der Parameter $U$ auf den theoretisch berechneten Untergrund $U_{\text{theo}}$ festgesetzt.
 
 Über das berechnete $\lambda$ lässt sich die Lebensdauer der Myonen bestimmen:
 \begin{equation*}
-    \tau_{\mu} = \frac{1}{\lambda} = \SI{1.70522+-0.05722}{\micro\second}
+    \tau_{\mu} = \frac{1}{\lambda} = \SI{1.71+-0.05}{\micro\second}
 \end{equation*}
 
 \begin{equation*}
-    a_{\tau} = \frac{\tau_{\text{theo}} - \tau}{\tau_{\text{theo}}} = \num{0.22384 +- 0.02605}
+    a_{\tau} = \frac{\tau_{\text{theo}} - \tau}{\tau_{\text{theo}}} = \num{0.224 +- 0.026}
 \end{equation*}

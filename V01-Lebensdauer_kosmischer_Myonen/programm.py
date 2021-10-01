@@ -51,7 +51,7 @@ plt.figure(figsize=(6.4,3.96),dpi=300)
 plt.plot(df2['Bin']
          ,df2['Puls']
          ,'.'
-         ,label = 'Meßdaten'
+         ,label = 'Messdaten'
         )
 plt.plot(df2['Bin']
          ,f(df2['Bin'],*params1)
@@ -101,7 +101,7 @@ if plot_errorbar:
                      ,df3[df3['Count'] != 0]['Count'].to_numpy()
                      ,yerr = np.sqrt(df3['Count'][df3['Count'] != 0])
                      ,fmt = '.'
-                     ,label = 'Meßwerte'
+                     ,label = 'Fehler der Messwerte'
                      ,ecolor = 'grey'
                      ,alpha = 0.3
                      ,markersize=0
@@ -124,22 +124,19 @@ params3,cov = curve_fit(gauß,df1['Delay'],df1['Rate'])
 errors = np.sqrt(np.diag(cov))
 params3_err = unp.uarray(params3,errors)
 err = params1_err[0]*df1['Delay']+params1_err[1]
+x = np.linspace(-10,11,100)
 
 plt.figure(figsize=(6.4,3.96),dpi=300)
-plt.errorbar(df1['Delay']
-             ,df1['Rate']
-             ,yerr = np.sqrt(df1['Rate'])
-             ,fmt = '.'
-             ,label = 'Fehler der Messwerte'
-             ,ecolor = 'grey'
-             ,capsize=3
-            )
 plt.plot(df1['Delay']
-         ,gauß(df1['Delay'],*params3)
-         ,label = 'Fit einer Gauß-Funktion'
-        )
+             ,df1['Rate']
+             #,yerr = np.sqrt(df1['Rate'])
+             ,'.'
+             ,label = 'Meßwerte'
+             #,ecolor = 'grey'
+             #,capsize=3
+            )
 plt.hlines(y = 0.5*gauß(df1['Delay'],*params3)[8]
-           ,xmin = -5.55
+           ,xmin = -5.4
            ,xmax = 7.45
            ,label = 'Halbwertsbreite'
           )
@@ -148,6 +145,10 @@ plt.axvline(x = 1
             ,alpha = 0.4
             ,label = 'Maximum'
             )
+plt.plot(x
+         ,gauß(x,*params3)
+         ,label = 'Fit einer Plateau-Funktion'
+        )
 plt.xlabel(f'$\Delta t_1 - \Delta t_2$')
 plt.ylabel(f'Counts/10s')
 plt.legend(loc = 'best')
@@ -155,3 +156,62 @@ plt.tight_layout()
 plt.savefig('plots/rate_20Hz.pdf',bbox_inches = "tight")
 plt.close()
 print('Durchgelaufen!')
+
+
+def gauß2(x,a,b,c):
+    return a*np.exp(-((x-b)/(2*c))**(2*32))
+
+params4,cov = curve_fit(gauß2,df1['Delay'],df1['Rate'])
+errors = np.sqrt(np.diag(cov))
+params4_err = unp.uarray(params4,errors)
+x = np.linspace(-10,11,100)
+
+plt.figure(figsize=(6.4,3.96),dpi=300)
+plt.plot(df1['Delay']
+             ,df1['Rate']
+             #,yerr = np.sqrt(df1['Rate'])
+             ,'.'
+             ,label = 'Meßwerte'
+             #,ecolor = 'grey'
+             #,capsize=3
+            )
+
+plt.plot(x
+         ,gauß2(x,*params4)
+         ,label = 'Fit einer Plateau-Funktion'
+        )
+plt.xlabel(f'$\Delta t_1 - \Delta t_2$')
+plt.ylabel(f'Counts/10s')
+plt.legend(loc = 'best')
+plt.tight_layout()
+plt.savefig('plots/rate_20Hz_plateau.pdf',bbox_inches = "tight")
+plt.close()
+
+def plateau_fkt(x,a,b,c):
+    return c/((np.exp(b*(x-a)) +1)*(np.exp(b*(-x-a)) +1) )
+
+params5,cov = curve_fit(plateau_fkt,df1['Delay'],df1['Rate'])
+errors = np.sqrt(np.diag(cov))
+params5_err = unp.uarray(params5,errors)
+x = np.linspace(-150,150,1000)
+
+plt.figure(figsize=(6.4,3.96),dpi=300)
+plt.plot(df1['Delay']
+             ,df1['Rate']
+             #,yerr = np.sqrt(df1['Rate'])
+             ,'.'
+             ,label = 'Meßwerte'
+             #,ecolor = 'grey'
+             #,capsize=3
+            )
+
+plt.plot(x
+         ,plateau_fkt(x,*params5)
+         ,label = 'Plateau-Fit'
+        )
+plt.xlabel(f'$\Delta t_1 - \Delta t_2$')
+plt.ylabel(f'Counts/10s')
+plt.legend(loc = 'best')
+plt.tight_layout()
+plt.savefig('plots/rate_20Hz_plateau2.pdf',bbox_inches = "tight")
+plt.close()

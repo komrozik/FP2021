@@ -1,3 +1,26 @@
 \newpage
 \section{Anhang}
 \label{sec:Anhang}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.75\textwidth]{./plots/rate_20Hz_plateau.pdf}
+    \caption{Versuch eine Plateaufunktion an die Daten zu Fitten. Die Plateaufunktion ist in Formel \ref{eqn:plateau} gezeigt. Die Plateaufunktion ist in diesem Fall eine Potenz der Gaußfunktion.}
+    \label{fig:plateau}
+\end{figure}
+\begin{equation}
+    a \cdot e^{-\left(\frac{x-b}{2c}\right)^{64}}
+    \label{eqn:plateau}
+\end{equation}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.75\textwidth]{./plots/rate_20Hz_plateau2.pdf}
+    \caption{Versuch eine Plateaufunktion an die Daten zu Fitten. Die Plateaufunktion ist in Formel \ref{eqn:plateau2} gezeigt. Die Plateaufunktion besteht aus einer Kombination von zwei Exponentialfunktionen.}
+    \label{fig:plateau2}
+\end{figure}
+\begin{equation}
+    \frac{c}{ \left(e^{b\left(x-a\right)} +1\right) \left(e^{b\left(-x-a\right)} +1\right) }
+    \label{eqn:plateau2}
+\end{equation}
+Mit der Plateaufunktion aus Formel \ref{eqn:plateau2} wird ein Plateau der Breite $2\cdot a$ erzeugt.
+Wie Steil das Plateau ist wird durch den Parameter $b$ verändert und die Höhe des Plateaus ist $c$.
