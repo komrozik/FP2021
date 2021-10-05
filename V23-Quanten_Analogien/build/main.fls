@@ -415,6 +415,9 @@ INPUT ./plots/Hatom/faufspaltung.pdf
 INPUT ./plots/Hatom/zustandsaufspaltung_9.pdf
 INPUT ./plots/Hatom/zustandsaufspaltung_9.pdf
 INPUT ./plots/Hatom/zustandsaufspaltung_9.pdf
+INPUT ./9mm_winkel.jpg
+INPUT ./9mm_winkel.jpg
+INPUT ./9mm_winkel.jpg
 INPUT ./plots/Hatom/res_blende.pdf
 INPUT ./plots/Hatom/res_blende.pdf
 INPUT ./plots/Hatom/res_blende.pdf
@@ -480,7 +483,8 @@ INPUT ./data/Festkoerper/periodisch/Spektrum_8_13mm_16mm_50.png
 INPUT ./data/Festkoerper/periodisch/Spektrum_8_13mm_16mm_50.png
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
-INPUT /home/smmakebe/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
+INPUT ./content/plainbib.tex
+INPUT ./content/plainbib.tex
 INPUT build/main.aux
 INPUT build/main.run.xml
 OUTPUT build/main.run.xml

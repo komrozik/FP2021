@@ -65,13 +65,24 @@ def cre_polar(data,name):
     r = np.linspace(1, 2, len(rho))
     theta = 2 * np.pi * r
     a=np.arange(0,185,10)
-    plt.polar(theta,rho)
+    #2,300kHz
+    #plt.polar(theta,abs(np.cos(theta-np.pi/2)),label="Theorie 2p0")
+    #plt.polar(theta,abs(1/3*(3*np.cos(theta-np.pi/2)**2-1))/0.6,label="Theorie 3")
+    #3,690kHz
+    #plt.polar(theta,abs(1/3*(3*np.cos(theta-np.pi/2)**2-1))/0.6,label="Theorie 3")
+    #4,970
+    #plt.polar(theta,abs(np.cos(theta-np.pi/2)*(5*np.cos(theta-np.pi/2)**2-3))/2,label="Theorie 4f0")    
+    #7,430
+    #plt.polar(theta,abs(63*np.cos(theta-np.pi/2)**5-70*np.cos(theta-np.pi/2)**3+15*np.cos(theta-np.pi/2))/8)
+
+    plt.polar(theta,rho/max(rho))
     plt.savefig("plots/Hatom/polar_"+f"{name}.pdf")
+    plt.legend(loc="best")
     plt.close()
-cre_polar(D2,"2300")
-cre_polar(D3,"3960")
-cre_polar(D4,"4970")
-cre_polar(D7,"7430")
+#cre_polar(D2,"2300")
+#cre_polar(D3,"3960")
+#cre_polar(D4,"4970")
+#cre_polar(D7,"7430")
 
 #Wasserstoffatom Zustandsaufspaltung 2095 2265
 path = './data/Wasserstoffatom/Ring_9mm_winkelabh'
@@ -156,7 +167,7 @@ plt.ylabel(r"$P\,/\,$will. Einheit")
 plt.xlabel(r"$f\,/\,$Hz")
 plt.legend(loc="best")
 plt.savefig("plots/Hatom/zustandsaufspaltung_9.pdf")
-plt.show()
+#plt.show()
 plt.close()
 
 plt.title("f-Aufspaltung")

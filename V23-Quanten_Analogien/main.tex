@@ -1,4 +1,9 @@
 \input{header.tex}
+\renewbibmacro{in:}{%
+  \ifentrytype{article}
+    {}
+    {\bibstring{in}%
+     \printunit{\intitlepunct}}}
 
 \title{Quanten Analogien}
 \author{%
@@ -36,8 +41,13 @@
 \input{content/auswertung.tex}
 \input{content/diskussion.tex}
 \newpage
+\appendix
+% Hier beginnt der Anhang, nummeriert in lateinischen Buchstaben
+
+
 \nocite{*}
-\printbibliography
+%\printbibliography
+\input{content/plainbib}
 
 
 
