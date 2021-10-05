@@ -7,8 +7,7 @@ from scipy.optimize import curve_fit
 from pylab import *
 import os
 
-path = '/home/smmakebe/uni/FP/FP2021/V23-Quanten_Analogien/data/Wasserstoffatom/Ohne_Ring'
-sav_path="/home/smmakebe/sciebo/DELTA/DELTA_bachelor_thesis/HPG_detector/plots/PLOTS/mess_cs_long"
+path = './data/Wasserstoffatom/Ohne_Ring'
 files = os.listdir(path)
 D2=[4.896,4.210,3.480,2.803,0.771,0.712,1.789,3.024,5.671,7.205,10.182,9.851,15.075,17,18.952,17.812,21.649,19.413,21.426]#2,301kHz
 D3=[0]*18#3,694kHz
