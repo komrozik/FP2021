@@ -35,7 +35,7 @@ Bei eingeschaltetem 'MG' lässt sich anhand der Peaks in der Messung die Relaxat
 \end{figure}
 Nach der Bestimmung der Peaks mit einer 'scipy' Methode \cite{2020SciPy-NMeth} wird eine Funktion der Form
 \begin{equation*}
-    A\left(\tau\right) = A_0 \left(1 + 2\exp\left( - \frac{\tau}{T_2}\right)\right)
+    A\left(\tau\right) = A_0 \exp\left( - \frac{\tau}{T_2}\right)
 \end{equation*}
 an die Peaks gefittet um $T_2$ zu bestimmen.
 \begin{figure}[ht]
@@ -47,7 +47,7 @@ an die Peaks gefittet um $T_2$ zu bestimmen.
 Mit dem nähern der Funktion ergeben sich folgende Parameter:
 \begin{align*}
     A_0 &= \SI{0.319 +- 0.009}{\volt}\\
-    T_2 &= \SI{0.95 +- 0.08}{\second}
+    T_2 &= \SI{2.11 +- 0.08}{\second}
 \end{align*}
 In diesem Fall entspricht $T_2$ der gesuchten Spin-Spin-Relaxationszeit.
 \newpage
@@ -73,8 +73,8 @@ an die Daten gefittet, siehe Abbildung \ref{fig:df2_2}.
 \end{figure}
 Mit dem Fit ergeben sich folgende Parameter:
 \begin{align*}
-    A_0 &= \SI{1.2897 +- 0.0127}{\volt}\\
-    T_D &= \SI{5.876 +- 0.207}{\second}
+    A_0 &= \SI{1.28278 +- 0.01225}{\volt}\\
+    T_D &= \SI{5.804 +- 0.209}{\second}
 \end{align*}
 Dabei ist $T_D$ die gesuchte Diffusionszeit.
 
